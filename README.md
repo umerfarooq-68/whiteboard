@@ -1,26 +1,26 @@
-# Collaborative_whiteboard 📋
+# Collaborative Whiteboard  
+I’m thrilled to announce the completion of my latest project, a Collaborative Whiteboard application built using Node.js, React (Vite), and Socket.IO. This powerful tool allows multiple users to draw, sketch, and brainstorm together in real-time, making remote collaboration more 
+dynamic and engaging.
 
-## About
+# Key Features:
+🎨 Real-Time Drawing: Instantaneous updates for all connected users.
+🎨 Customizable Tools: Adjust brush color, size, and shape to suit your drawing needs.
+💾 Save and Clear: Easily save your creations or clear the canvas with a single click.
+🔄 Responsive Design: Optimized for both desktop and mobile devices.
+🔧 Modern Stack: Built with the latest technologies including Vite for blazing fast development and Socket.IO for seamless real-time communication.
 
-"Collaborative Whiteboard is a platform facilitating real-time, shared visual collaboration, fostering teamwork and creativity across distances."
+# Technical Stack:
+* Node.js for the backend server
+* React (Vite) for the frontend interface
+* Socket.IO for real-time, bi-directional communication
+I’ve focused on creating a smooth and intuitive user experience, incorporating animations and a sleek design to make the whiteboard both functional and visually appealing. This project has been a fantastic opportunity to delve deeper into real-time web applications and modern frontend development tools.
 
-![image](https://github.com/FidalMathew/collaborative_whiteboard/assets/84982038/5eaf413a-964c-4f34-8e5d-8f6966333806)
+# Starting Frontend 
+* cd client 
+* npm install or npm i 
+* npm run dev 
 
-
-### Installation
-
-To run the frontend, navigate to the `frontend` directory and execute the following commands:
-
-```bash
-cd client
-npm install
-npm run dev
-```
-
-To run the frontend, navigate to the `backend` directory and execute the following commands:
-
-```bash
-cd backend
-npm install
-node index.js
-```
+# Starting Backend 
+* cd backend 
+* npm install 
+* node index.js
