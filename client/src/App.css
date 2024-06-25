@@ -7,6 +7,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .tools {
@@ -18,11 +19,16 @@
     padding: 1em;
     background-color: black;
     color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1s ease-in-out;
 }
 
 h1 {
     margin-bottom: 1rem;
     text-align: center;
+    color: white;
+    animation: slideInDown 1s ease-in-out;
 }
 
 input {
@@ -31,13 +37,73 @@ input {
 
 span {
     font-size: 1.3em;
+    margin-bottom: 0.5em;
 }
 
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #004494;
+}
+
+button:focus {
+    outline: none;
+}
+
+select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+select:hover {
+    border-color: #007BFF;
+}
+
+select:focus {
+    outline: none;
+    border-color: #007BFF;
+}
 
 @media screen and (max-width: 600px) {
     .tools {
         flex-direction: column;
         align-items: start;
     }
+}
 
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideInDown {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
